@@ -1,0 +1,245 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+}
+
+header {
+    padding: 10px 40px;
+}
+
+header .logo {
+    display: inline-block;
+}
+
+header .logo img {
+    max-width: 60vw;
+    max-height: 20vh;
+    min-height: 80px;
+    min-width: 330px;
+}
+
+header .phone {
+    display: inline-block;
+    right: 80px;
+    position: absolute;
+    vertical-align: top;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 40px;
+    color: #192F69;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+header .phone small {
+    font-size: 20px;
+}
+
+nav {
+    background-color: #192F69;
+    padding: 4px 40px;
+    margin: 20px 0 0 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav .submenu {
+    background-color: #E6C22C;
+}
+
+nav .submenu ul li a{
+    color: #333;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    background-size: cover;
+    padding: 150px 40px;
+}
+
+.hero#home {
+    background-image: url('home.jpg');
+    background-position: 50% 10%;
+}
+
+.hero#sand {
+    background-image: url('sand.jpg');
+}
+
+
+.hero-text {
+    background-color: #192F69;
+    display: inline-block;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.hero-text h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 42px;
+    margin: 0;
+}
+
+.hero-text a {
+    color: #E6C22C;
+    text-decoration: none;
+    border: 2px solid #E6C22C;
+    padding: 6px 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.content {
+    padding: 10px 10%;
+    min-height:60vh;
+    padding-bottom:40px;
+}
+
+footer{
+    background-color:#333;
+    color:white;
+    padding:10px 40px;
+}
+
+footer .left{
+    display: inline-block;
+    width:50%;
+}
+
+footer .right{
+    display: inline-block;
+    width:49%;
+    text-align: right;
+}
+
+footer a{
+    color:white;
+}
+
+h2 {
+    color: #192F69;
+}
+
+h2.emp {
+    text-align: center;
+    font-size: 38px;
+    border-bottom: 4px solid #E6C22C;
+}
+
+.box-row{
+    text-align: center;
+    margin-bottom:20px;
+}
+
+.box-row .box{
+    display: inline-block;
+    border:2px solid #E6C22C;
+    margin:10px;
+    padding:20px;
+    color:#192F69;
+}
+
+.box-row .box h3{
+    margin:10px 0;
+}
+
+.box-row .box p{
+    margin:0;
+}
+
+.box-row .box .fa{
+    font-size:40px;
+}
+
+.button-blue{
+    display: inline-block;
+    background-color:#192F69;
+    color:#E6C22C;
+    text-decoration: none;
+    padding:10px 20px;
+}
+
+.button-large{
+    font-size:20px;
+    font-weight: 500;
+}
+
+/* -- RESPONSIVE -- */
+
+@media only screen and (max-width: 1400px) {
+    .hero {
+        padding: 100px 40px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero {
+        padding: 50px 40px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    header .phone {
+        width:100%;
+        position:static;
+        margin-top:0;
+        font-size:30px;
+        text-align: center;
+    }
+
+    header .phone br{
+        display:none;
+    }
+
+    header .logo{
+        text-align: center;
+        width:100%;
+    }
+
+    nav{
+        margin:0;
+    }
+
+    footer .left, footer .right{
+        width:100%;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+    nav {
+        padding: 4px 0;
+        text-align: center;
+    }
+
+    nav ul li{
+        padding:10px;
+    }
+
+    header .logo img{
+        max-width:100%;
+        min-width:auto;
+        max-height:auto;
+        min-height:auto;
+    }
+}
