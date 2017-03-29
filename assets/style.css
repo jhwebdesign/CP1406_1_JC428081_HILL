@@ -143,6 +143,33 @@ h2.emp {
     color:#192F69;
 }
 
+/* -- ANNOUNCEMENTS --*/
+
+ul.announcements{
+    list-style: none;
+    padding:0;
+}
+
+ul.announcements li{
+    padding-bottom:20px;
+    padding-top:10px;
+    margin-bottom:10px;
+    border-bottom:1px solid #E6C22C;
+    color:#192F69;
+    text-align: center;
+}
+
+table.ladder th{
+    background:#E6C22C;
+    padding:4px 10px;
+    color:#192F69;
+}
+
+table.ladder td{
+    padding:8px 14px;
+    border-bottom:1px solid #333;
+}
+
 /* -- FOOTER --*/
 
 footer{
