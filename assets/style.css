@@ -98,6 +98,11 @@ nav ul li[onclick]{
     background-position:50% 20%;
 }
 
+.hero#beachnet {
+    background-image: url('beachnet.jpg');
+    background-position:50% 50%;
+}
+
 .hero-text {
     background-color: #192F69;
     display: inline-block;

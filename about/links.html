@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html">
+    <link href="../assets/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700,900" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Slammers Beach Volleyball | JC428081</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/logo.png">
+            </a>
+        </div>
+        <div class="phone">
+            <small>Join Today!</small>
+            <br>47712233
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li onclick="showhide_about()">About</li>
+            <li><a href="../announcements.html">Announcements</a></li>
+            <li onclick="showhide_contact()">Contact</li>
+        </ul>
+        <div id="sub-about" class="submenu" style="display:none">
+            <ul>
+                <li><a href="about-volleyball.html">About Volleyball</a></li>
+                <li><a href="who-can-play.html">Who Can Play</a></li>
+                <li><a href="playing-guidelines.html">Playing Guidelines</a></li>
+                <li><a href="links.html">Links</a></li>
+            </ul>
+        </div>
+        <div id="sub-contact" class="submenu" style="display:none">
+            <ul>
+                <li><a href="../contact/contact-us.html">Contact</a></li>
+                <li><a href="../contact/sign-up.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero" id="sand">
+        <div class="hero-text">
+            <h1>Links</h1>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <p>Here are some additional resources about volleyball. We definitely reccomend you go have a look!</p>
+
+        <br>
+
+        <div class="box-row">
+            <div class="box">
+                <h3>Volleyball<br>Worldwide</h3>
+                <p><a href="http://www.volleyball.org/">volleyball.org</a></p>
+            </div>
+            <div class="box">
+                <h3>FIVB International Federation<br>of Volleyball, Beach</h3>
+                <p><a href="http://www.fivb.org/EN/beachvolleyball/">fivb.org</a></p>
+            </div>
+            <div class="box">
+                <h3>Association of<br>Volleyball Professionals</h3>
+                <p><a href="http://avp.com">avp.com</a></p>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <footer>
+        <div class="left">
+            &copy; 2017 Slammers Beach Volleyball
+        </div>
+        <div class="right">
+            Site design by <a href="https://jasonhill.id.au/">Jason Hill</a>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    function showhide_about() {
+        var div = document.getElementById("sub-about");
+        var div_other = document.getElementById("sub-contact");
+        if (div.style.display !== "none") {
+            div.style.display = "none";
+        } else {
+            div.style.display = "inline-block";
+            div_other.style.display = "none";
+        }
+    }
+
+    function showhide_contact() {
+        var div = document.getElementById("sub-contact");
+        var div_other = document.getElementById("sub-about");
+        if (div.style.display !== "none") {
+            div.style.display = "none";
+        } else {
+            div.style.display = "inline-block";
+            div_other.style.display = "none";
+        }
+    }
+</script>
+
+</html>
