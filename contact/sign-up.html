@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html">
+    <link href="../assets/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700,900" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Slammers Beach Volleyball | JC428081</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/logo.png">
+            </a>
+        </div>
+        <div class="phone">
+            <small>Join Today!</small>
+            <br>47712233
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li onclick="showhide_about()">About</li>
+            <li><a href="../announcements.html">Announcements</a></li>
+            <li onclick="showhide_contact()">Contact</li>
+        </ul>
+        <div id="sub-about" class="submenu" style="display:none">
+            <ul>
+                <li><a href="../about/about-volleyball.html">About Volleyball</a></li>
+                <li><a href="../about/who-can-play.html">Who Can Play</a></li>
+                <li><a href="../about/playing-guidelines.html">Playing Guidelines</a></li>
+                <li><a href="../about/links.html">Links</a></li>
+            </ul>
+        </div>
+        <div id="sub-contact" class="submenu" style="display:none">
+            <ul>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero" id="slam">
+        <div class="hero-text">
+            <h1>Sign Up</h1>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <p>
+            Looking to sign up? Awesome! Please complete the form below, and we'll add you to the register. We'll be in contact with you shortly to confirm your details.
+        </p>
+
+        <form id="signup" action="" method="post">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="name" required style="width:250px">
+            </div>
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="number" name="number" required style="width:250px">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" required style="width:250px">
+            </div>
+            <div class="form-group">
+                <label>Competition Day</label>
+                <select name="competition-day" style="width:250px">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Competition Time</label>
+                <input type="radio" name="competition-time" required value="Afternoon"> Afternoon
+                <input type="radio" name="competition-time" required value="Evening"> Evening
+            </div>
+            <div class="form-group">
+                <p style="margin-left:165px">
+                    <small>
+                        <strong>Playing Guidelines</strong><br>
+                        Participants in Slammers Beach Volleyball play at their own risk. Anyone playing is responsible for their own safety and should only play if they are capable. Check with your doctor before you begin.
+                        Game fees must be paid prior to the start of the game. Games may be cancelled by players up to 4 hours before hand to get a refund. Without 4 hours' notice, participants will forfeit the game and be charged 50% of the game fee.
+                    </small>
+                </p>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="playingguidelines" value="True" required style="margin-left:165px"> I have read and agree to your playing guidelines
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit Signup" class="button-blue" style="margin-left:165px">
+            </div>
+        </form>
+
+        <p>
+            
+        </p>
+
+
+    </div>
+
+    <footer>
+        <div class="left">
+            &copy; 2017 Slammers Beach Volleyball
+        </div>
+        <div class="right">
+            Site design by <a href="https://jasonhill.id.au/">Jason Hill</a>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    function showhide_about() {
+        var div = document.getElementById("sub-about");
+        var div_other = document.getElementById("sub-contact");
+        if (div.style.display !== "none") {
+            div.style.display = "none";
+        } else {
+            div.style.display = "inline-block";
+            div_other.style.display = "none";
+        }
+    }
+
+    function showhide_contact() {
+        var div = document.getElementById("sub-contact");
+        var div_other = document.getElementById("sub-about");
+        if (div.style.display !== "none") {
+            div.style.display = "none";
+        } else {
+            div.style.display = "inline-block";
+            div_other.style.display = "none";
+        }
+    }
+</script>
+
+</html>

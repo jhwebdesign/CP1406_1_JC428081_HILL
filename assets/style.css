@@ -3,6 +3,8 @@ body {
     margin: 0;
 }
 
+/* -- HEADER -- */
+
 header {
     padding: 10px 40px;
 }
@@ -35,6 +37,8 @@ header .phone small {
     font-size: 20px;
 }
 
+/* -- NAVIGATION -- */
+
 nav {
     background-color: #192F69;
     padding: 4px 40px;
@@ -54,7 +58,6 @@ nav ul li {
     text-transform: uppercase;
     color: white;
     font-weight: 500;
-    cursor: pointer;
 }
 
 nav .submenu {
@@ -70,6 +73,12 @@ nav a {
     color: white;
 }
 
+nav ul li[onclick]{
+    cursor: pointer;
+}
+
+/* -- HEROES -- */
+
 .hero {
     background-size: cover;
     padding: 150px 40px;
@@ -84,6 +93,10 @@ nav a {
     background-image: url('sand.jpg');
 }
 
+.hero#slam {
+    background-image: url('slam.jpg');
+    background-position:50% 20%;
+}
 
 .hero-text {
     background-color: #192F69;
@@ -108,11 +121,29 @@ nav a {
     margin-top: 10px;
 }
 
+/* -- PAGE CONTENT -- */
+
 .content {
     padding: 10px 10%;
     min-height:60vh;
     padding-bottom:40px;
 }
+
+h2 {
+    color: #192F69;
+}
+
+h2.emp {
+    text-align: center;
+    font-size: 38px;
+    border-bottom: 4px solid #E6C22C;
+}
+
+.blue{
+    color:#192F69;
+}
+
+/* -- FOOTER --*/
 
 footer{
     background-color:#333;
@@ -135,15 +166,7 @@ footer a{
     color:white;
 }
 
-h2 {
-    color: #192F69;
-}
-
-h2.emp {
-    text-align: center;
-    font-size: 38px;
-    border-bottom: 4px solid #E6C22C;
-}
+/* -- LAYOUT -- */
 
 .box-row{
     text-align: center;
@@ -170,6 +193,14 @@ h2.emp {
     font-size:40px;
 }
 
+.col-50{
+    width:49.5%;
+    display:inline-block;
+    vertical-align: top;
+}
+
+/* -- BUTTONS -- */
+
 .button-blue{
     display: inline-block;
     background-color:#192F69;
@@ -183,6 +214,57 @@ h2.emp {
     font-weight: 500;
 }
 
+/* -- FORMS -- */
+
+form .form-group{
+    margin-bottom:10px;
+}
+
+form .form-group input,
+form .form-group select,
+form .form-group textarea{
+    padding:5px 10px;
+    font-size:14px;
+    font-family: 'Fira Sans', sans-serif;
+    border:1px solid #aaa;
+}
+
+form .form-group label{
+    color:#192F69;
+    font-weight: 500;
+}
+
+form#signup label{
+    width:140px;
+    padding-right:20px;
+    display: inline-block;
+    text-align: right;
+}
+
+form#contact label{
+    width:80px;
+    padding-right:20px;
+    display: inline-block;
+    text-align: right;
+}
+
+#contact-details strong{
+    width:80px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#contact-details br{
+    margin-bottom:15px;
+}
+
+/* -- RESPONSIVE -- */
+
+.img-border{
+    border:2px solid #E6C22C;
+}
+
 /* -- RESPONSIVE -- */
 
 @media only screen and (max-width: 1400px) {
@@ -194,6 +276,11 @@ h2.emp {
 @media only screen and (max-width: 1000px) {
     .hero {
         padding: 50px 40px;
+    }
+
+    .col-50{
+        display: block;
+        width:100%;
     }
 }
 
