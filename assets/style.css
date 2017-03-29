@@ -126,6 +126,16 @@ nav ul li[onclick]{
     margin-top: 10px;
 }
 
+.attribution p{
+    margin:0;
+    font-size:10px;
+    color:#666;
+}
+
+.attribution{
+    padding: 10px 40px;
+}
+
 /* -- PAGE CONTENT -- */
 
 .content {
